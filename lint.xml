@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+    <issue id="DefaultLocale">
+        <ignore path="src/com/cartoon/util/Utils.java" />
+    </issue>
+    <issue id="HandlerLeak">
+        <ignore path="src/com/comic/download/CustomizedListView.java" />
+    </issue>
+    <issue id="SimpleDateFormat">
+        <ignore path="src/com/comic/activity/core/MainActivity.java" />
+        <ignore path="src/com/comic/activity/ext/GetMoreSetup.java" />
+    </issue>
+    <issue id="UseValueOf" severity="ignore" />
+</lint>

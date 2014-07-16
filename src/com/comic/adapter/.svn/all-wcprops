@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/BDQN/!svn/ver/62/CartoonReader/src/com/comic/adapter
+END
+SimpleAdapterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/BDQN/!svn/ver/19/CartoonReader/src/com/comic/adapter/SimpleAdapterFactory.java
+END
+ImageAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/BDQN/!svn/ver/58/CartoonReader/src/com/comic/adapter/ImageAdapter.java
+END
+GestureListenerAdapter.java
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/BDQN/!svn/ver/62/CartoonReader/src/com/comic/adapter/GestureListenerAdapter.java
+END

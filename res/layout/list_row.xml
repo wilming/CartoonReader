@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/list_selector"
+    android:orientation="vertical"
+    android:padding="10dip" >
+    
+    <RelativeLayout
+        android:id="@+id/item_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+	<!--  ListRow Left sied Thumbnail image -->
+	<LinearLayout android:id="@+id/thumbnail" 
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:padding="1dip"		
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/image_bg" 
+	    android:layout_marginRight="5dip">
+        
+		<ImageView     
+			android:id="@+id/list_image"   
+	        android:layout_width="55dip"
+	        android:layout_height="55dip"
+	        android:src="@drawable/rihanna"/>
+        
+	</LinearLayout>
+    
+	<!-- Title Of Song-->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/thumbnail"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Rihanna Love the way lie"
+        android:textColor="#040404"
+        android:typeface="sans" 
+        android:textSize="20dip"
+        android:textStyle="bold"/>
+
+	<!-- Artist Name -->
+    <TextView
+        android:id="@+id/artist"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:textColor="#343434"
+        android:textSize="15dip"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/thumbnail"
+        android:text="Just gona stand there and ..." />
+
+	<!-- Rightend Duration -->
+    <TextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@id/title"
+        android:gravity="right"
+        android:text="0"
+        android:layout_marginRight="5dip"
+        android:textSize="22dip"
+        android:textColor="#FF4500"
+        android:textStyle="bold"/>
+      
+     <!-- Rightend Arrow -->    
+     <ImageView android:layout_width="wrap_content"
+     	android:layout_height="wrap_content"
+     	android:src="@drawable/arrowxiao"
+     	android:layout_alignParentRight="true"
+     	android:layout_centerVertical="true"/>
+    </RelativeLayout>
+     
+         
+     <RelativeLayout
+        android:id="@+id/layout_other"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:id="@+id/item_open"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:clickable="false"
+            android:orientation="horizontal" >
+
+            <ProgressBar
+		       android:id="@+id/downloadProgress"
+		       android:layout_width="0dip"
+		       android:layout_height="8dp"
+		       style="?android:attr/progressBarStyleHorizontal"
+		       android:layout_weight="2"
+		       android:progress="23" 
+		       android:max="100"  
+		       android:layout_gravity="center_vertical"></ProgressBar>
+	        <Button
+            android:id="@+id/download_button"
+            android:layout_marginRight="5dp" 
+            android:paddingRight="10dp" 
+            android:textSize="17.0sp" 
+            android:layout_width="70dp" 
+            android:layout_height="wrap_content" 
+            android:textColor="#000000"
+            android:background="@drawable/selector_btn_download_list" 
+            android:text="下载"/>
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</LinearLayout>

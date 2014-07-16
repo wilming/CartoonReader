@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout 
+        android:layout_width="match_parent"
+   		android:layout_height="wrap_content"
+   		android:layout_marginTop="10dp"
+   		android:layout_marginBottom="10dp" >
+        <!-- 漫画封面 -->
+        <ImageView 
+            android:id="@+id/imagePath"
+            android:layout_width="95dp"
+            android:layout_height="95dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true" />
+        
+        <!-- 漫画书名 -->
+        <TextView 
+            android:text="漫画书名"
+            android:id="@+id/listbookMarkName"
+            style="@style/style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/imagePath" />
+        <!-- 漫画书名 -->
+        <TextView 
+            android:text="上次阅读"
+            android:id="@+id/lastTimeReaded"
+            style="@style/style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/imagePath" />
+        <!-- 保存时间 -->
+        <TextView 
+            android:text="保存时间"
+            android:id="@+id/saveTime"
+            style="@style/style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/lastTimeReaded" />
+        <TextView 
+            android:id="@+id/imageId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />"
+    </RelativeLayout>
+
+</RelativeLayout>
